@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	cloudflare "github.com/cloudflare/cloudflare-go"
+	cloudflare "github.com/grafana/cloudflare-go"
 	"github.com/olekukonko/tablewriter"
 	"github.com/pkg/errors"
 	"github.com/urfave/cli/v2"
@@ -114,9 +114,7 @@ func ips(c *cli.Context) error {
 	return nil
 }
 
-//
 // gets type of IPs to retrieve and returns results
-//
 func _getIps(ipType string, showMsgType bool) {
 	ips, _ := cloudflare.IPs()
 
