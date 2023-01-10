@@ -17,6 +17,6 @@ jobs:
       - run: go run cmd/changelog-check/main.go ${{ github.event.pull_request.number }}
         working-directory: ./internal/tools
         env:
-          GITHUB_OWNER: cloudflare
+          GITHUB_OWNER: grafana
           GITHUB_REPO: cloudflare-go
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

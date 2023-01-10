@@ -58,7 +58,7 @@ issue) to discuss any non-trivial changes before submitting code.
 You need a working Go environment. We officially support only currently supported Go versions according to [Go project's release policy](https://go.dev/doc/devel/release#policy).
 
 ```
-go get github.com/cloudflare/cloudflare-go
+go get github.com/grafana/cloudflare-go
 ```
 
 ## Getting Started
@@ -72,7 +72,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/cloudflare/cloudflare-go"
+	"github.com/grafana/cloudflare-go"
 )
 
 func main() {
